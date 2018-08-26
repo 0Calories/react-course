@@ -6,11 +6,6 @@ export default class AddOption extends React.Component {
         error: undefined
     };
 
-    constructor(props) {
-        super(props);
-        this.handleAddOption = this.handleAddOption.bind(this);
-    }
-
     handleAddOption = (e) => {
         e.preventDefault();
 
@@ -22,7 +17,7 @@ export default class AddOption extends React.Component {
         if (!error) {
             e.target.elements.option.value = '';
         }
-    }
+    };
 
     render() {
         return (
